@@ -1,0 +1,181 @@
+.systems .section-heading {
+  max-width: 20ch;
+}
+
+.system-card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.system-card {
+  border: 1px solid var(--border-warm);
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--bg-raised) 0%, var(--bg-deep) 100%);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.system-card:hover {
+  border-color: var(--border-warm-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px -20px rgba(240, 165, 98, 0.35);
+}
+
+.system-card__heading-wrap {
+  margin: 0;
+}
+
+.system-card__trigger {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  text-align: left;
+}
+
+.system-card__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.system-card__title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.system-card__teaser {
+  font-size: 0.92rem;
+  color: var(--text-tertiary);
+  max-width: 52ch;
+}
+
+.system-card__toggle {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border-warm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: var(--amber);
+  transition: border-color 0.2s var(--ease), transform 0.3s var(--ease);
+}
+
+.system-card--open .system-card__toggle {
+  transform: rotate(180deg);
+}
+
+.system-card__panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s var(--ease);
+}
+
+.system-card--open .system-card__panel {
+  grid-template-rows: 1fr;
+}
+
+.system-card__panel-inner {
+  overflow: hidden;
+}
+
+.system-card__diagram {
+  padding: 4px 24px 8px;
+}
+
+.system-card__copy {
+  padding: 12px 24px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.system-card__copy p {
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+  line-height: 1.65;
+}
+
+.system-card__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* ---------- Architecture diagrams ---------- */
+.diagram-scroll {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.diagram {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.diagram__node {
+  fill: var(--bg-deep);
+  stroke: var(--border-warm-strong);
+  stroke-width: 1;
+  rx: 8;
+}
+
+.diagram__label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  fill: var(--text-primary);
+}
+
+.diagram__header-label {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  fill: var(--text-tertiary);
+  letter-spacing: 0.04em;
+}
+
+.diagram__node-divider,
+.diagram__node-baseplate {
+  stroke: var(--border-warm);
+  stroke-width: 1;
+}
+
+.diagram__connector {
+  fill: none;
+  stroke: var(--border-warm-strong);
+  stroke-width: 1.25;
+}
+
+.diagram__chip {
+  fill: var(--bg-raised-2);
+  stroke: var(--border-warm);
+  stroke-width: 1;
+  rx: 5;
+}
+
+.diagram__edgelabel {
+  font-family: var(--font-mono);
+  fill: var(--text-tertiary);
+}
+
+.diagram__dot {
+  fill: var(--amber);
+}
+
+@media (max-width: 640px) {
+  .system-card__trigger {
+    padding: 18px;
+  }
+  .system-card__diagram {
+    padding: 4px 12px 6px;
+  }
+  .system-card__copy {
+    padding: 10px 18px 22px;
+  }
+}

@@ -1,0 +1,40 @@
+.nav__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav__indicator {
+  position: absolute;
+  left: -18px;
+  width: 2px;
+  border-radius: 2px;
+  background: var(--amber);
+  box-shadow: 0 0 8px rgba(240, 165, 98, 0.55);
+  transition: transform 0.35s var(--ease), height 0.35s var(--ease);
+}
+
+.nav__link {
+  display: inline-block;
+  padding: 7px 0;
+  font-family: var(--font-body);
+  font-size: 0.94rem;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  transition: color 0.2s var(--ease);
+}
+
+.nav__link:hover {
+  color: var(--text-primary);
+}
+
+.nav__link--active {
+  color: var(--amber);
+}
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}

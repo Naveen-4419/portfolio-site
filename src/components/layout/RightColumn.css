@@ -1,0 +1,13 @@
+.right-column {
+  position: relative;
+  z-index: 1;
+  margin-left: var(--left-width);
+  width: calc(100% - var(--left-width));
+}
+
+@media (max-width: 900px) {
+  .right-column {
+    margin-left: 0;
+    width: 100%;
+  }
+}

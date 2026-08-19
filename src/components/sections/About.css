@@ -1,0 +1,20 @@
+.about {
+  border-top: none;
+  padding-top: clamp(3rem, 8vh, 5rem);
+}
+
+.about .eyebrow {
+  margin-bottom: 16px;
+}
+
+.about__line {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--text-primary);
+  margin-bottom: 14px;
+}
+
+.about__line:last-child {
+  margin-bottom: 0;
+  color: var(--text-secondary);
+}
