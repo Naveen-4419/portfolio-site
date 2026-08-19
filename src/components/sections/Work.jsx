@@ -88,11 +88,39 @@ function OrderToPaymentPreview() {
 
 function PortfolioSitePreview() {
   return (
-    <svg viewBox="0 0 220 90" className="work-preview__svg" role="presentation" aria-hidden="true">
-      <rect x="16" y="14" width="18" height="62" rx="5" className="work-preview__node work-preview__node--fill" />
-      <path d="M54,28 L188,28" className="work-preview__line" />
-      <path d="M54,45 L168,45" className="work-preview__line" />
-      <path d="M54,62 L148,62" className="work-preview__line" />
+    <svg
+      viewBox="0 0 220 84"
+      className="work-preview__svg"
+      role="img"
+      aria-label="Miniature of this site: a left profile column beside a heading, a small system diagram, and content lines"
+    >
+      {/* left column: name block, nav, social icons */}
+      <rect x="6" y="6" width="74" height="72" rx="9" className="work-preview__node" />
+      <rect x="16" y="16" width="42" height="5" rx="2.5" className="work-preview__mark" />
+      <rect x="16" y="25" width="30" height="5" rx="2.5" className="work-preview__mark" />
+
+      <rect x="16" y="39" width="22" height="3" rx="1.5" className="work-preview__mark work-preview__mark--active" />
+      <rect x="16" y="47" width="18" height="3" rx="1.5" className="work-preview__mark work-preview__mark--muted" />
+      <rect x="16" y="55" width="18" height="3" rx="1.5" className="work-preview__mark work-preview__mark--muted" />
+      <rect x="16" y="63" width="18" height="3" rx="1.5" className="work-preview__mark work-preview__mark--muted" />
+
+      <circle cx="20" cy="71" r="4" className="work-preview__node" />
+      <circle cx="34" cy="71" r="4" className="work-preview__node" />
+      <circle cx="48" cy="71" r="4" className="work-preview__node" />
+
+      {/* right column: heading, mini system motif, content lines */}
+      <rect x="96" y="14" width="76" height="6" rx="3" className="work-preview__mark" />
+
+      <path d="M110,36 L126,36" className="work-preview__line" />
+      <path d="M140,36 L156,36" className="work-preview__line" />
+      <circle cx="118" cy="36" r="1.8" className="work-preview__dot" />
+      <circle cx="148" cy="36" r="1.8" className="work-preview__dot" />
+      <rect x="96" y="30" width="14" height="12" rx="3" className="work-preview__node" />
+      <rect x="126" y="30" width="14" height="12" rx="3" className="work-preview__node" />
+      <rect x="156" y="30" width="14" height="12" rx="3" className="work-preview__node" />
+
+      <path d="M96,58 L188,58" className="work-preview__line" />
+      <path d="M96,68 L164,68" className="work-preview__line" />
     </svg>
   )
 }

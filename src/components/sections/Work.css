@@ -72,6 +72,21 @@
   stroke: none;
 }
 
+.work-preview__mark {
+  fill: var(--text-primary);
+  opacity: 0.85;
+}
+
+.work-preview__mark--muted {
+  fill: var(--border-warm-strong);
+  opacity: 1;
+}
+
+.work-preview__mark--active {
+  fill: var(--amber);
+  opacity: 1;
+}
+
 .work-card__meta {
   display: flex;
   align-items: baseline;
