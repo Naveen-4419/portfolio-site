@@ -10,14 +10,14 @@ const LINKS = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/placeholder',
+    href: 'https://www.linkedin.com/in/naveen-kumar-aa135b264',
     icon: (
       <path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM3.2 8.75h3.5V21H3.2V8.75zm6.2 0h3.36v1.68h.05c.47-.87 1.6-1.79 3.3-1.79 3.53 0 4.18 2.24 4.18 5.15V21h-3.5v-5.53c0-1.32-.02-3.02-1.87-3.02-1.87 0-2.16 1.42-2.16 2.92V21H9.4V8.75z" />
     ),
   },
   {
     label: 'Email',
-    href: 'mailto:placeholder@example.com',
+    href: 'mailto:naveenpdevjava@gmail.com',
     icon: (
       <path d="M3 5.5A1.5 1.5 0 0 1 4.5 4h15A1.5 1.5 0 0 1 21 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5v-13zm1.7.3 7.3 5.86 7.3-5.86H4.7zM19.5 7.1l-7.02 5.63a1 1 0 0 1-1.25 0L4.21 7.1v11.4h15.29V7.1z" />
     ),

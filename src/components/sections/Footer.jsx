@@ -4,7 +4,6 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="container">
-        <p className="footer__line">Thanks for reading this far — always happy to talk shop.</p>
         <p className="footer__meta">
           <a
             className="footer__cert-link"
