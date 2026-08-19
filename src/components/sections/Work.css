@@ -35,6 +35,12 @@
   margin-bottom: 18px;
 }
 
+.work-preview__svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .work-preview__node {
   fill: var(--bg-raised-2);
   stroke: var(--border-warm-strong);
@@ -45,6 +51,12 @@
   fill: rgba(240, 165, 98, 0.08);
 }
 
+.work-preview__node-label {
+  font-family: var(--font-mono);
+  font-size: 7.5px;
+  fill: var(--text-primary);
+}
+
 .work-preview__line {
   stroke: var(--border-warm-strong);
   stroke-width: 1.25;
@@ -53,6 +65,11 @@
 
 .work-preview__dot {
   fill: var(--amber);
+}
+
+.work-preview__flow-path {
+  fill: none;
+  stroke: none;
 }
 
 .work-card__meta {
